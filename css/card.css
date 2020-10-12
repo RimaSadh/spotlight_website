@@ -61,31 +61,31 @@
 
 /* Sample Images for articles */
 .one{
-    background-image: url(/images/ai.jpeg);
+    background-image: url(../images/ai.jpeg);
     background-repeat: no-repeat;
     background-size: cover;	
 }
 
 .two{
-    background-image: url(/images/uxui.jpg);
+    background-image: url(../images/uxui.jpg);
     background-repeat: no-repeat;
     background-size: cover;	
 }
 
 .three{
-    background-image: url(/images/sunrise.jpg);
+    background-image: url(../images/sunrise.jpg);
     background-repeat: no-repeat;
     background-size: cover;	
 }
 
 .four{
-    background-image: url(/images/socialmedia.jpg);
+    background-image: url(../images/socialmedia.jpg);
     background-repeat: no-repeat;
     background-size: cover;	
 }
 
 .five{
-    background-image: url(/images/learning.jpg);
+    background-image: url(../images/learning.jpg);
     background-repeat: no-repeat;
     background-size: cover;	
 }
