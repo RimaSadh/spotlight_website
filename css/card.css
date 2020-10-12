@@ -1,0 +1,108 @@
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    justify-content: center;
+    border: 2px solid #0781B2;
+    padding: 10px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.card{
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: whitesmoke;
+}
+
+.card-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 25% 25%;
+    grid-template-areas: 
+    "title title"
+    "auth date"
+    "desc desc";
+}
+
+.article-title{
+    grid-area: title;
+    margin: auto;
+}
+
+.article-auth{
+    grid-area: auth;
+    margin: auto;
+}
+
+.article-date{
+    grid-area: date;
+    margin: auto;
+}
+
+.article-describtion{
+    grid-area: desc;
+    margin: auto;
+}
+
+.card-overlay:hover{
+    background: rgba(0, 0, 0, 0.75);
+}
+
+/* Sample Images for articles */
+.one{
+    background-image: url(/images/ai.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;	
+}
+
+.two{
+    background-image: url(/images/uxui.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;	
+}
+
+.three{
+    background-image: url(/images/sunrise.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;	
+}
+
+.four{
+    background-image: url(/images/socialmedia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;	
+}
+
+.five{
+    background-image: url(/images/learning.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;	
+}
+
+/* Large Screens */
+@media(min-width: 600px){
+    .card-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        justify-content: center;
+        border: 2px solid #0781B2;
+        padding: 10px;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+}

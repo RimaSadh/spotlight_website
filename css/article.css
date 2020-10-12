@@ -1,0 +1,45 @@
+.top-main > h2{
+    border-bottom: 2px solid #0781B2;
+    padding-bottom: 5px;
+}
+
+.avatar{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+article{
+    text-align: left;
+    padding: 10px;
+}
+
+article img, figcaption{
+    margin: auto;
+    width: 50%;
+    display: block;
+}
+
+.main-button, .main-button a{
+    border: none;
+    background-color: #0781B2;
+    color: whitesmoke;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.share img{
+    width: 30px;
+    height: 30px;
+}
+
+/* Large Screens */
+@media(min-width: 600px){
+    article{
+        font-size: 20px;
+    }
+
+}

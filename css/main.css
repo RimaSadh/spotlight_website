@@ -1,0 +1,81 @@
+@import "./navigation.css";
+@import "./card.css";
+@import url('https://fonts.googleapis.com/css?family=Alegreya Sans');
+
+
+body{
+    background-image: url(/images/background_reading.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-attachment: fixed;
+    background-position: bottom left;
+    font-family: 'Alegreya Sans';
+    margin: 0px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-rows: auto 1fr auto ; 
+    grid-template-areas: 
+    "hd"
+    "main"
+    "ft";
+}
+
+header{
+    display: flex;
+    grid-area: hd;
+}
+
+strong{
+    color: #F8A64C;
+}
+
+main{
+    grid-area: main;
+    margin: 40px;
+    text-align: center;
+}
+
+.top-main > h1{
+    border-bottom: 2px solid #0781B2;
+    padding-bottom: 5px;
+}
+
+.top-main > div, .cards-container{
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.card > a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+footer{
+    grid-area: ft;
+    text-align: center;
+    padding: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.subscribe-button{
+    border: 0;
+    padding: 10px;
+    background-color: #F8A64C;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Alegreya Sans';
+    border-radius: 10px;
+}
